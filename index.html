@@ -118,7 +118,7 @@ button:hover {
 
 <body>
      <audio controls autoplay>
-        <source src="Asake - Dull (Official Visualizer).mp3"="audio/mpeg"> 
+        <source src="song.mp3" type="audio/mpeg">
         </audio>
 
 <div class="container">
@@ -135,7 +135,7 @@ button:hover {
     <p>Happy Birthday once again 🎂🎉</p>
 </div>
 
-<!-- 💖 HEARTS -->
+<!--  HEARTS -->
 <div class="heart" style="left:10%;">💖</div>
 <div class="heart" style="left:30%; animation-delay:1s;">💖</div>
 <div class="heart" style="left:60%; animation-delay:2s;">💖</div>
@@ -146,7 +146,7 @@ function showMessage() {
     alert("This is just the beginning… more surprises coming 💖✨");
 }
 
-/* 🎉 CONFETTI GENERATOR */
+/*  CONFETTI GENERATOR */
 for (let i = 0; i < 50; i++) {
     let confetti = document.createElement("div");
     confetti.className = "confetti";
@@ -155,6 +155,22 @@ for (let i = 0; i < 50; i++) {
     document.body.appendChild(confetti);
 }
 </script>
+<script>
+ function startSurprise() {
+    const music = document.getElementById("bg-music");
+
+    
+    music.muted = false;
+
+    music.play().then(() => {
+        console.log("Music playing");
+    }).catch(() => {
+        alert("Tap again to play music 💖");
+    });
+
+    alert("This is just the beginning 💖✨");
+ }
+</script>    
 
 </body>
 </html>
