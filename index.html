@@ -117,9 +117,7 @@ button:hover {
 </head>
 
 <body>
-     <audio controls >
-        <source src="song.mp3" type="audio/mpeg">
-        </audio>
+    
 
 <div class="container">
     <h1>🎉 Happy Birthday 🎉</h1>
@@ -155,22 +153,7 @@ for (let i = 0; i < 50; i++) {
     document.body.appendChild(confetti);
 }
 </script>
-<script>
- function startSurprise() {
-    const music = document.getElementById("bg-music");
-
-    
-    music.muted = false;
-
-    music.play().then(() => {
-        console.log("Music playing");
-    }).catch(() => {
-        alert("Tap again to play music 💖");
-    });
-
-    alert("This is just the beginning 💖✨");
- }
-</script>    
+ 
 
 </body>
 </html>
